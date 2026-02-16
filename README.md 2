@@ -1,0 +1,299 @@
+QUESTION 3
+
+1. Google Maps
+Application
+
+Google Maps
+
+Data Structures Used
+
+Graph (cities = nodes, roads = edges)
+
+Heap (Priority Queue)
+
+Algorithms Used
+
+Dijkstra’s Algorithm
+
+A* (A-Star) Algorithm
+
+Why?
+
+A road network is naturally a graph.
+
+Dijkstra and A* efficiently compute the shortest path.
+
+A heap allows fast selection of the next closest location (O(log n)).
+
+Handles millions of locations efficiently.
+
+2. Facebook
+Application
+
+Facebook
+
+Data Structures Used
+
+Graph (users as nodes, friendships as edges)
+
+Hash Tables
+
+Algorithms Used
+
+Breadth-First Search (BFS) (friend suggestions)
+
+Graph traversal algorithms
+
+Recommendation algorithms
+
+Why?
+
+Social connections are best modeled as a graph.
+
+BFS finds mutual friends efficiently.
+
+Hash tables allow fast user data lookup (O(1)).
+
+3. Google Search
+Application
+
+Google Search
+
+Data Structures Used
+
+Trie (Prefix Tree)
+
+Hash Table
+
+Inverted Index (Tree-based structure)
+
+Algorithms Used
+
+PageRank Algorithm
+
+String matching algorithms
+
+Why?
+
+Trie enables fast autocomplete suggestions.
+
+Inverted index enables quick keyword search.
+
+PageRank ranks pages efficiently based on graph structure of the web.
+
+4. Microsoft Word
+Application
+
+Microsoft Word
+
+Data Structures Used
+
+Stack
+
+Algorithms Used
+
+Undo/Redo operation logic
+
+Why?
+
+Stack follows LIFO principle.
+
+Last action performed is the first action undone.
+
+Efficient and simple implementation.
+
+5. Linux Operating System
+Application
+
+Linux
+
+Data Structures Used
+
+Queue (Process scheduling)
+
+Tree (File system hierarchy)
+
+Linked List (Kernel data management)
+
+Algorithms Used
+
+Round Robin Scheduling
+
+Completely Fair Scheduler (CFS)
+
+Why?
+
+Queue ensures fair process execution (FIFO).
+
+Tree structure represents directory hierarchy.
+
+Linked lists allow dynamic memory management.
+
+6. MySQL Database
+Application
+
+MySQL
+
+Data Structures Used
+
+B-Tree
+
+Hash Index
+
+Algorithms Used
+
+Binary Search
+
+Indexing algorithms
+
+Why?
+
+B-Trees maintain sorted data for fast searching (O(log n)).
+
+Efficient disk-based storage.
+
+Optimized for large-scale databases.
+
+7. YouTube
+Application
+
+YouTube
+
+Data Structures Used
+
+Graph
+
+Heap
+
+Hash Tables
+
+Algorithms Used
+
+Recommendation algorithms
+
+Ranking algorithms
+
+Search algorithms
+
+Why?
+
+Graph models user-video relationships.
+
+Heap ranks trending videos.
+
+Hash tables provide fast access to video metadata.
+
+8. E-commerce Platforms (Amazon)
+Application
+
+Amazon
+
+Data Structures Used
+
+Hash Table
+
+Tree
+
+Graph
+
+Algorithms Used
+
+Search algorithms
+
+Sorting algorithms
+
+Recommendation algorithms
+
+Why?
+
+Hash tables allow fast product lookup.
+
+Trees organize product categories.
+
+Graphs connect users to products for recommendations.
+
+9. Redis (Caching System)
+Application
+
+Redis
+
+Data Structures Used
+
+Hash Table
+
+Sorted Sets
+
+Lists
+
+Algorithms Used
+
+Hashing algorithms
+
+LRU (Least Recently Used) Cache algorithm
+
+Why?
+
+O(1) data retrieval.
+
+Sorted sets rank items efficiently.
+
+LRU removes least used items to optimize memory.
+
+10. Web Browsers (Google Chrome)
+Application
+
+Google Chrome
+
+Data Structures Used
+
+Tree (DOM structure)
+
+Stack (Navigation)
+
+Hash Table (Caching)
+
+Algorithms Used
+
+Parsing algorithms
+
+Rendering algorithms
+
+Why?
+
+HTML structure is hierarchical → Tree.
+
+Back/Forward buttons → Stack.
+
+Cache lookup → Hash table for speed.
+
+Summary Table
+Application	Data Structure	Algorithm	Reason
+Google Maps	Graph + Heap	Dijkstra/A*	Shortest path
+Facebook	Graph	BFS	Friend suggestions
+Google Search	Trie	PageRank	Fast search & ranking
+MS Word	Stack	Undo logic	Reverse operations
+Linux OS	Queue	Round Robin	Fair scheduling
+MySQL	B-Tree	Binary Search	Fast indexing
+YouTube	Graph + Heap	Ranking	Recommendations
+Amazon	Hash Table	Sorting/Search	Fast product lookup
+Redis	Hash Table	LRU	Fast caching
+Chrome	Tree	Parsing	Page rendering
+Conclusion
+
+Applications choose data structures and algorithms based on:
+
+Speed requirements
+
+Data relationships
+
+Memory efficiency
+
+Scalability
+
+Nature of the problem
+
+Efficient systems rely on the correct combination of:
+
+Data structure (how data is stored)
+
+Algorithm (how data is processed)
