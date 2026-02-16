@@ -1,0 +1,146 @@
+                  ARRAY.C 
+# Array implementation using Python list
+array = [10, 20, 30, 40, 50]
+
+# Access
+print("Element at index 2:", array[2])
+
+# Traversal
+for element in array:
+    print(element)
+
+
+
+               LINKED LIST
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+
+    def insert(self, data):
+        new_node = Node(data)
+        new_node.next = self.head
+        self.head = new_node
+
+    def display(self):
+        current = self.head
+        while current:
+            print(current.data)
+            current = current.next
+
+ll = LinkedList()
+ll.insert(10)
+ll.insert(20)
+ll.insert(30)
+ll.display()
+
+
+                 STACK
+class Stack:
+    def __init__(self):
+        self.stack = []
+
+    def push(self, item):
+        self.stack.append(item)
+
+    def pop(self):
+        if not self.is_empty():
+            return self.stack.pop()
+
+    def is_empty(self):
+        return len(self.stack) == 0
+
+s = Stack()
+s.push(10)
+s.push(20)
+print("Popped:", s.pop())
+
+
+                   QUEUE
+
+from collections import deque
+
+class Queue:
+    def __init__(self):
+        self.queue = deque()
+
+    def enqueue(self, item):
+        self.queue.append(item)
+
+    def dequeue(self):
+        if not self.is_empty():
+            return self.queue.popleft()
+
+    def is_empty(self):
+        return len(self.queue) == 0
+
+q = Queue()
+q.enqueue(10)
+q.enqueue(20)
+print("Dequeued:", q.dequeue())
+
+
+             TREE
+class TreeNode:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+
+# Creating a simple binary tree
+root = TreeNode(1)
+root.left = TreeNode(2)
+root.right = TreeNode(3)
+
+print("Root:", root.value)
+print("Left Child:", root.left.value)
+print("Right Child:", root.right.value)
+
+
+                GRAPH
+
+class Graph:
+    def __init__(self):
+        self.graph = {}
+
+    def add_edge(self, u, v):
+        if u not in self.graph:
+            self.graph[u] = []
+        self.graph[u].append(v)
+
+    def display(self):
+        for node in self.graph:
+            print(node, "->", self.graph[node])
+
+g = Graph()
+g.add_edge("A", "B")
+g.add_edge("A", "C")
+g.add_edge("B", "D")
+g.display()
+
+              HASH TABLE
+# Hash Table using Python dictionary
+
+hash_table = {}
+
+# Insert
+hash_table["name"] = "Alice"
+hash_table["age"] = 22
+
+# Access
+print("Name:", hash_table["name"])
+
+# Traverse
+for key, value in hash_table.items():
+    print(key, ":", value)
+
+
+
+
+
+
+
