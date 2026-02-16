@@ -1,1 +1,252 @@
-KIBIRO
+QUESTION 2
+ 
+ Linear Data Structures
+1. Arrays
+Where Applied
+
+Image processing systems (pixel grids)
+
+Scientific computing libraries like NumPy
+
+Database record storage
+
+Game development (grid-based maps)
+
+Why Arrays Are Used
+
+O(1) fast indexing – Direct access using index
+
+Memory efficiency – Stored in contiguous memory
+
+CPU cache-friendly – Improves performance
+
+Best for fixed-size data collections
+
+Real Example
+
+In Adobe Photoshop, images are stored as large 2D arrays of pixels.
+
+2. Linked Lists
+Where Applied
+
+Music playlists
+
+Browser navigation
+
+Memory management in operating systems
+
+Why Linked Lists Are Used
+
+Dynamic size – No fixed memory limit
+
+Efficient insertion and deletion
+
+Does not require contiguous memory
+
+Real Example
+
+Used in process scheduling within Linux for dynamic task handling.
+
+3. Stacks
+Where Applied
+
+Function call management (Call Stack)
+
+Undo/Redo systems
+
+Expression evaluation (compilers)
+
+Why Stacks Are Used
+
+LIFO (Last In First Out) behavior
+
+Natural fit for recursion
+
+Easy reversal of operations
+
+Real Example
+
+Undo feature in Microsoft Word uses a stack to reverse actions.
+
+4. Queues
+Where Applied
+
+CPU task scheduling
+
+Printer spooling systems
+
+Network packet handling
+
+Message brokers
+
+Why Queues Are Used
+
+FIFO (First In First Out) fairness
+
+Efficient task ordering
+
+Prevents starvation in systems
+
+Real Example
+
+Distributed streaming platform Apache Kafka uses queue-like logs for message ordering.
+
+2. Non-Linear Data Structures
+5. Trees
+Where Applied
+
+File systems
+
+Databases indexing
+
+XML/HTML DOM structure
+
+Artificial Intelligence (decision trees)
+
+Why Trees Are Used
+
+Represent hierarchical relationships
+
+Fast searching and sorting (O(log n))
+
+Efficient indexing with B-Trees
+
+Real Examples
+
+MySQL uses B-Trees for indexing.
+
+File systems in Windows use tree structures for directories.
+
+6. Graphs
+Where Applied
+
+Social networks
+
+GPS navigation
+
+Network routing
+
+Recommendation systems
+
+Why Graphs Are Used
+
+Represent complex relationships
+
+Support shortest path algorithms (Dijkstra)
+
+Efficient modeling of connected systems
+
+Real Examples
+
+Google Maps uses graphs for route calculation.
+
+Facebook models friendships as graph connections.
+
+7. Hash Tables
+Where Applied
+
+Caching systems
+
+Database indexing
+
+Password storage systems
+
+Dictionaries in programming languages
+
+Why Hash Tables Are Used
+
+O(1) average lookup time
+
+Efficient key-value storage
+
+Fast search, insert, delete operations
+
+Real Example
+
+Redis uses hash tables for ultra-fast data retrieval.
+
+3. Advanced Data Structures
+8. Heaps (Priority Queues)
+Where Applied
+
+CPU scheduling
+
+Task management systems
+
+Pathfinding algorithms
+
+AI systems
+
+Why Heaps Are Used
+
+Efficient priority management
+
+O(log n) insertion and deletion
+
+Always retrieves highest/lowest priority element
+
+Real Example
+
+Used in shortest path algorithms inside Google Maps.
+
+9. Tries (Prefix Trees)
+Where Applied
+
+Autocomplete systems
+
+Spell checkers
+
+Search engines
+
+Why Tries Are Used
+
+Fast prefix searching
+
+Efficient word storage
+
+Reduces duplicate comparisons
+
+Real Example
+
+Search suggestions in Google Search use trie-like structures.
+
+4. How Data Structures Work Within Systems
+System	Data Structure Used	Why
+Operating System	Queue, Stack, Tree	Process scheduling, memory management
+Database	B-Tree, Hash Table	Fast indexing and searching
+Web Browser	Stack, Tree, Hash Table	Navigation, DOM rendering, caching
+Social Media	Graph	Relationship modeling
+E-commerce	Hash Table, Tree	Fast product search
+Key Reasons Data Structures Are Chosen
+
+Performance Efficiency – Faster execution time
+
+Memory Optimization – Better space management
+
+Scalability – Handle millions of users/data
+
+Problem-Specific Design – Each structure solves a specific problem efficiently
+
+Conclusion
+
+Data structures are applied based on:
+
+Nature of the problem (hierarchical, linear, relational)
+
+Required speed (search, insert, delete)
+
+Memory constraints
+
+System scalability requirements
+
+They are the backbone of:
+
+Operating systems
+
+Databases
+
+Web applications
+
+AI systems
+
+Networking platforms
